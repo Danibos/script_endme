@@ -8,10 +8,6 @@
 - **Reboot or Shutdown** your system directly from Kodi without the need to enter terminal commands.
 - Supports **sudo-less shutdown** and reboot commands using the appropriate permissions in the `sudoers` file.
 
-## To do
-
-- Sends a **CEC command** to turn off all connected HDMI devices when Kodi is shut down.
-
 ## Requirements
 
 - **Kodi Omega**: Should work from Matrix as well but i didn't test it.
