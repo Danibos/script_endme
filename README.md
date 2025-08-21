@@ -22,13 +22,13 @@
    This as been tested only in Arch:
    Add the following lines to your `sudoers` file (use `visudo` to edit):
    ```
-   username ALL=(ALL) NOPASSWD: /usr/bin/systemctl poweroff, /usr/bin/systemctl reboot, /sbin/shutdown
+   username ALL=(ALL) NOPASSWD: /usr/bin/systemctl poweroff, /usr/bin/systemctl reboot, /sbin/shutdown, /usr/sbin/shutdown, /usr/bin/shutdown, /usr/sbin/reboot, /usr/bin/reboot
    ```
    **Replace `username`** with your user or the user running Kodi.
 
    alternative way with one command:
    ```
-   echo "$USER ALL=(ALL) NOPASSWD: /usr/bin/systemctl poweroff, /usr/bin/systemctl reboot, /sbin/shutdown" | sudo EDITOR='tee -a' visudo
+   echo "$USER ALL=(ALL) NOPASSWD: /usr/bin/systemctl poweroff, /usr/bin/systemctl reboot, /sbin/shutdown, /usr/sbin/shutdown, /usr/bin/shutdown, /usr/sbin/reboot, /usr/bin/reboot" | sudo EDITOR='tee -a' visudo
    ```
 
 **Important: Pay Attention When Modifying the sudoers File**
